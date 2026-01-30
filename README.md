@@ -1,62 +1,67 @@
-# uk-social-care-hospital-capacity
+# NHS Workforce Vacancy Risk Register
 
 ## Overview
-This project analyses delayed discharges and hospital flow across England to understand how social care capacity constraints impact acute hospital performance.  
-The analysis is framed for Integrated Care Systems seeking to improve flow reduce bed pressure and strengthen system resilience.
+A workforce capacity risk register analysing nursing and administrative vacancy rates across NHS regions in England.
 
 ## Problem Statement
-Delayed discharges driven by limited social care capacity reduce hospital bed availability and increase operational strain. Responsibility and funding sit across organisational boundaries making coordinated action difficult. Limited system-level insight leads to short-term fixes rather than sustainable improvement increasing length of stay cost and patient harm.
+Persistent workforce vacancies pose a significant risk to service delivery. Regional variation suggests uneven pressure across the system, particularly for nursing roles.
 
 ## Stakeholders
-- NHS England / ICS leadership
-- Trust operational teams
+- NHS England
+- ICS workforce planners
+- Trust operational leadership
 - Commissioners
-- Patients and public
+- Patients
 
 ## Key Questions
-- How do delayed discharges vary by region and local authority?
-- What impact do delays have on bed occupancy and hospital capacity?
-- Where would targeted social care investment most improve system flow?
+- Are nursing vacancies increasing faster in London compared to the North?
+- Which regions represent the highest workforce risk?
+- How concentrated are staffing shortages by staff group?
 
 ## Data Sources
-- Dataset name – provider
-- Time period
-- Coverage and limitations
+- **NHS Workforce Statistics – Summary Tables** (NHS Digital)  
+- **Time period:** Latest available reporting period  
+- **Coverage and limitations:** Aggregated regional data. No trust-level detail.
 
 ## Approach
 - Data ingestion and cleaning
-- Exploratory analysis
-- Feature engineering
-- Analysis or modelling method
-- Validation and sense-checks
+- Calculation of vacancy rates
+- Risk classification using RAG thresholds
+- Regional comparison analysis
 
 ## Key Findings
-- Finding 1 with short explanation
-- Finding 2
-- Finding 3
+- Nursing vacancies are consistently higher than administrative roles
+- London shows sustained vacancy pressure
+- Workforce risk is unevenly distributed across regions
 
 ## Visual Outputs
-Describe charts dashboards or tables included.
-Reference notebooks or apps.
+- Vacancy rate bar charts by region  
+- RAG risk register tables  
+- Regional comparison visuals
 
 ## Delivery Considerations
-- Data quality issues and assumptions
-- Risks and mitigations
-- Constraints and trade-offs
+- Vacancy definitions may change over time
+- Aggregated data limits local insight
+- RAG thresholds are indicative not absolute
 
 ## Recommendations
-Actionable recommendations framed for decision-makers.
-Prioritised where possible.
+- Prioritise nursing recruitment and retention initiatives
+- Focus interventions on highest-risk regions
+- Use vacancy rates as a standing operational risk metric
 
 ## Impact
-What would change if these recommendations were acted on.
-Operational financial or patient impact.
+Reducing vacancy rates would improve service resilience, staff wellbeing, and patient experience.
 
 ## Tools Used
-Python pandas numpy matplotlib seaborn SQL VSCode
+Python pandas numpy matplotlib VSCode
 
 ## How to Run
-Steps to reproduce analysis locally.
+1. Clone the repository  
+2. Install dependencies  
+3. Add workforce summary data to `data/raw`  
+4. Run `python run.py`
 
 ## Next Steps
-What you would do with more time data or access.
+- Add trust-level workforce data
+- Model vacancy reduction scenarios
+- Link workforce gaps to performance outcomes
